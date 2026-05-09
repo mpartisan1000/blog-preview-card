@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Solutions](https://github.com/mpartisan1000/blog-preview-card.git)
+- Solution URL: [FrontEnd Mentor Solutions](https://www.frontendmentor.io/solutions/responsive-blog-preview-card-webpage-using-css-grids-and-flexbox-VoYGmSDeGS)
 - Live Site URL: [Blog Card Website](https://blogcardwebpage.vercel.app/)
 
 ## My process
