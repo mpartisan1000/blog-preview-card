@@ -76,7 +76,7 @@ a{
 .txt-article {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0.5rem;
+    grid-gap: 0.75rem;
     grid-template-areas: "title"
                          "published-date"
                          "tag"
