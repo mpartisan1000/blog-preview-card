@@ -1,0 +1,146 @@
+/* Fonts */
+@font-face {
+    font-family: Figtree;
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-weight: 500 800;
+}
+
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+html, body, main {
+
+    height: 100%;
+    width: 100%;
+    
+}
+
+body {
+    background: #F4D04E;
+    font-family: "Figtree", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #111111;
+}
+
+a{
+    text-decoration: none;
+    color: #111111;
+}
+
+/*Main Content*/
+.main-container {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.wrapper {
+    max-width: 24rem;
+    max-height: 32.625rem;
+    background-color: white;
+    border: solid #111111 0.1rem;
+    padding: 1.5rem;
+    border-radius: 3%;
+    box-shadow: 0.5rem 0.5rem #111111;
+}
+
+.wrapper:hover,
+.wrapper:focus{
+    box-shadow: 1rem 1rem #111111;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.wrapper:hover .t-link {
+    color: #F4D04E;
+}
+
+
+.blog-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.img-wrapper, .img-wrapper img {
+    border-radius: 3%;
+    max-width: 100%;
+}
+
+.txt-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas: "title"
+                         "published-date"
+                         "tag"
+                         "summary";
+    max-width: 100%;
+}
+
+
+.title {
+    grid-area: tag;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.published-date{
+    grid-area: published-date;
+    font-size: 0.875em;
+}
+
+.tag {
+    grid-area: title;
+    background-color: #F4D04E;
+    font-weight: bold;
+    font-size: 0.875em;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6%;
+}
+.summary {
+    grid-area: summary;
+    color: #6b6b6b;
+}
+
+.author-wrapper img{
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.375rem;
+}
+
+.author-wrapper p{
+    font-size: 0.875rem;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: center;
+}
+
+/*footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/*Media Queries*/
+@media(max-width: 48em){
+.wrapper{
+    max-width: 20.438rem;
+    max-height: 31.3125rem;
+}
+}
+
+@media(max-width: 23.375em){
+    .wrapper{
+        max-width: 88%;
+        max-height: 31.3125rem;
+    }
+}

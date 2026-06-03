@@ -60,24 +60,27 @@ I learned how to change the positions of my elements using css grids
 ```css
 .proud-of-this-css {
   display: grid;
-  grid-template-areas: "c1" "c2" "c3" "c4";
+  grid-template-areas: "c1"
+                       "c2" 
+                       "c3"
+                       "c4";
 
 }
 
 .c1 {
-  grid-area: 1;
+  grid-area: c3;
 }
 
-.c1 {
-  grid-area: 3;
+.c2 {
+  grid-area: c4;
 }
 
-.c1 {
-  grid-area: 2;
+.c3 {
+  grid-area: c1;
 }
 
-.c1 {
-  grid-area: 4;
+.c4 {
+  grid-area: c2;
 }
 ```
 
