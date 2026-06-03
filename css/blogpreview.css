@@ -65,7 +65,7 @@ a{
 .blog-card {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-gap: 1.5rem;
 }
 
 .img-wrapper, .img-wrapper img {
